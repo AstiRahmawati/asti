@@ -1,0 +1,10 @@
+1.buatlah suatu layout website yg bertemakan kuliner / makanan
+2.website tersebut mempunyai 3 menu yg pertama beranda , produk , kontak
+3.beri keterangan gambar nama dan juga harga pada makanan 
+4.menu kontak berisi sebuah form yg memfasilitasi pengunjung untuk memberi saran 
+5.menu beranda berisi tentang penjelasan website tersebut dan menu makanan yang paling 
+laris
+
+
+EKSPLISIT PAKE VAR
+IMPLISIT TIDAK PAKE VAR

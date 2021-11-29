@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<head>
+    <title>Konversi Waktu Dari Detik</title>
+    <script type="text/javascript">
+    function proses(){
+        var x;
+        x = parseInt(document.getElementById("lbldetik").value);
+        var y;
+        var hari;
+        var jam;
+        var menit;
+        var detik;
+
+        y = x % 3600;
+        hari = x / 86400;
+        jam = x / 3600;
+        menit = y / 3600;
+        detik = y % 60;
+         
+        result.innerHTML = Math.floor(hari) + 'hari' + Math.floor(jam) + 'jam' + Math.floor(menit) + 'menit' + Math.floor(detik) + 'detik';
+    }
+    function reset(){
+        document.getElementById("lbldetik").value = "";
+        document.getElementById("result").innerHTML = "Masukan Kembali";
+    }
+</script>
+<center>
+    <h1>Konversi Detik Ke Hari , Jam , Menit dan Detik</h1>
+    <br>
+</center>
+</head>
+<body>
+    <center>
+        <label>Input</label>
+        <input id="lbldetik" type="number" placeholder="detik">
+        <label>detik></label>
+        <br><br>
+        <label>Hasil :</label>
+        <label id="result"></label>
+        <br><br>
+        <input type="button" value="Proses" onclick="proses()">
+        <input type="button" value="Reset" onclick="reset()">
+    </center>
+</body>
+</html>
